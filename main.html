@@ -5,8 +5,13 @@
       <script src = "ipv4.js" type = "text/javascript"></script>
       <script src = "cart.js" type = "text/javascript"></script>      
    </head>
-   <script type="text/javascript">    
-      console.log(listIPv4.length);
+   <script type="text/javascript">         
+      console.log('Все список '+listIPv4.length+' штука');
+
+      const notrepeatedlist=listIPv4.filter((item, 
+            index) => listIPv4.indexOf(item) === index);
+            console.log('Все список уникальных адресов '+notrepeatedlist.length+' штука');
+            
    </script>
    <body>      
     
